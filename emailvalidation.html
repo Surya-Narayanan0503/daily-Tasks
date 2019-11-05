@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <span>email:</span><input type="text" title="Email address" placeholder="E-mail" id="email"><br>
+        <span>password:</span><input type="text" title="Password" placeholder="password" id="password"><br>
+        <button id="submit" onclick="submit()">Login</button>
+
+    </form>
+    <script>
+        function submit()
+        {
+           var len=password.value.length;
+           function validateemail(email)
+           {
+               if(^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$.test(email.value))
+               {
+                   return (true)
+               }
+               alert("You have entered an invalid e-mail address!")
+               return (false)
+           }
+           function validatepassword(password)
+           {
+               
+           }
+        }
+    </script>
+</body>
+</html>

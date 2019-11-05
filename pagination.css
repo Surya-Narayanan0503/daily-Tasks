@@ -1,0 +1,20 @@
+.pagination {
+    display: inline-block;
+    color: white;
+    
+    margin-left: 5px;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: lightcoral;
+    border: 0.5px solid #ddd;
+    margin-top: 13px;
+    text-align: center;
+    
+  }
+  body{
+    text-align: center;
+  }
+  
+ 
+  
+  

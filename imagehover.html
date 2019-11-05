@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+    <img onmouseover="mouseEntered()" onmouseout="mouseExit()" id="content" src="C:\Users\surya narayanan\Pictures\FB_IMG_1476811976426.jpg" style="height: 300px; width:100" > 
+
+<script>
+    var pic=document.getElementById("content");
+    var timer;
+    var i=["hugh_jackman_as_wolverine-1920x1080.jpg","the_wolverine_2013-2560x1600.jpg","the_wolverine_2013_movie-1920x1080.jpg","2013_the_wolverine-2560x1440.jpg"]
+    var count=0;
+    
+    function mouseEntered()
+    {
+        timer=setInterval(function (){
+            pic.setAttribute("src",i[count]);
+            count++;
+            if(count>=i.length)
+            count=0;
+        },500);
+      }
+    
+    function mouseExit()
+    {
+        clearInterval(timer);
+        
+    }
+</script>
+</body>
+</html>
